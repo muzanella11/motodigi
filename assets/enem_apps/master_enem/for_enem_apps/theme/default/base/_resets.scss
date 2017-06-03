@@ -1,0 +1,90 @@
+/******************************/
+/*****                    *****/
+/*****                   ******/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****              ***********/
+/*****             ************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/******************************/
+
+.bismillah {
+    color: white;
+}
+::-webkit-selection { 
+    color: white;
+    background: tomato;
+}
+
+::-moz-selection { 
+    color: white;
+    background: tomato;
+}
+
+::-ms-selection { 
+    color: white;
+    background: tomato;
+}
+
+::-o-selection { 
+    color: white;
+    background: tomato;
+}
+
+::selection {
+    color: white;
+    background: tomato;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: auto;
+}
+
+body {
+//    @include transition(all 1s ease-in-out);
+    font-family: $enem_font_family_default;
+//    background-color: #1D1D1D; 
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.428571429;
+    color: #333;
+    font-style: normal;
+    cursor: default;
+    font-weight: 400;
+}
+
+p { font-size: 14px;}
+
+a {
+    text-decoration: none;
+    outline: 0;
+    &:hover {
+        text-decoration: none;
+        outline: 0;
+    }
+    &:visited {
+        text-decoration: none;
+        outline: 0;
+    }
+    &:active {
+        outline: 0;
+    }
+    &:focus {
+        outline: 0;
+    }
+}
+
+button {
+    outline: 0;
+}

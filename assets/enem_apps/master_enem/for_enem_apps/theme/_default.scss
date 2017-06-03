@@ -1,0 +1,47 @@
+/******************************/
+/*****                    *****/
+/*****                   ******/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****              ***********/
+/*****             ************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/******************************/
+
+/** Namespacing **/
+/**
+  Use BEM methodology 
+  .block{}
+  .block__element{}
+  .block--modifier{}
+
+  > .block represents the high level element of the module
+  > .block__element represents a descendent of .block
+  > .block--modifier represents a different version of .block
+******************************************/
+
+/** This Place For Variable Style **/
+@import "default/_variables";
+/*******************************/
+
+/** This Place For Base Style **/
+@import "default/_base";
+/*******************************/
+
+/** This Place For Layout Style **/
+@import "default/_layout";
+/*******************************/
+
+/** This Place For Modules Style **/
+@import "default/_modules";
+/*******************************/
+
+/** This Place For State Style **/
+@import "default/_state";
+/*******************************/

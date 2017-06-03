@@ -1,0 +1,33 @@
+{
+  "name": "enem_apps",
+  "homepage": "https://github.com/muzanella11/enemland",
+  "authors": [
+    "enem"
+  ],
+  "description": "enem frmwk",
+  "main": "grunt.js",
+  "keywords": [
+    "enem"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6"
+  },
+  "devDependencies": {
+    "bootstrap": "^3.3.6",
+    "fancybox": "^2.1.5",
+    "morris.js": "morrisjs#^0.5.1",
+    "Swiper": "swiper#^3.3.1",
+    "Waves": "waves#^0.7.5",
+    "vex": "^2.3.4",
+    "yepnope": "^2.0.0",
+    "font-awesome": "fontawesome#^4.6.3"
+  }
+}
