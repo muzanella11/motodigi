@@ -1323,10 +1323,10 @@ var enem = (function ($) {
                         var swiper = new Swiper(dataSlider.element, dataSlider.setting);
                     } else {
                         var swiper = new Swiper(dataSlider.element, {
-                            //pagination: '.swiper-pagination',
-                            slidesPerView: 7,
+                            pagination: '.swiper-pagination',
+                            slidesPerView: dataSlider.slidesPerView ? dataSlider.slidesPerView : 7,
                             paginationClickable: true,
-                            spaceBetween: 40,
+                            spaceBetween: 30,
                             freeMode: true,
                             grabCursor: true,
                             nextButton: '.swiper-button-next',
@@ -2422,3 +2422,5 @@ var enem = (function ($) {
 	};
 
 })(jQuery);
+
+const mzn = 'Nurfirliana Muzanella - 2017'

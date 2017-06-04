@@ -14,7 +14,13 @@
 /*****     ********************/
 /******************************/
 
-/** This Place For State Style **/
-@import "state/_normal";
-@import "state/_responsive";
+/** This Place For Normal **/
+.#{$theme-prefix} {
+	&.no-margin {
+		margin: 0;
+	}
+	&.no-padding {
+		padding: 0;
+	}
+}
 /*******************************/

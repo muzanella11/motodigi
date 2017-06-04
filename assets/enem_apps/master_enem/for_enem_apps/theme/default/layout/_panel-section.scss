@@ -14,7 +14,22 @@
 /*****     ********************/
 /******************************/
 
-/** This Place For State Style **/
-@import "state/_normal";
-@import "state/_responsive";
+/** This Place For Panel Section **/
+.#{$theme-prefix} {
+	&.l-panel-section {
+		& .l-panel-section__title {
+			position: relative;
+			text-align: center;
+			margin: 0;
+			margin-bottom: 48px;
+			display: block;
+			text-transform: uppercase;
+		}
+
+		& .l-panel-section__content {
+			position: relative;
+			width: 100%;
+		}
+	}
+}
 /*******************************/

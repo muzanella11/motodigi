@@ -1,0 +1,82 @@
+/******************************/
+/*****                    *****/
+/*****                   ******/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****              ***********/
+/*****             ************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/******************************/
+
+/** This Place For Core **/
+.#{$theme-prefix} {
+	&.why-us {
+		position: relative;
+		width: 100%;
+		display: flex;
+		& .why-us__block {
+			flex: 1;
+			text-align: center;
+			& img {
+				width: 100px;
+				height: 100px;
+			}
+
+			& .title {
+				position: relative;
+				width: 100%;
+			}
+		}
+	}
+
+	&.content-service {
+		padding: 0 10vw;
+		& > div {
+			text-align: center;
+		}
+		& img {
+			width: 100px;
+			height: 100px;
+		}
+		& .title {
+			position: relative;
+			width: 100%;
+			padding: 16px 0;
+		}
+	}
+
+	&.steps {
+		& > div {
+			text-align: left;
+		}
+		& img {
+			width: 100px;
+			height: 100px;
+		}
+		& .title {
+			position: relative;
+			width: 100%;
+			padding: 16px 0;
+			font-weight: bold;
+		}
+	}
+
+	&.brand-slider {
+		min-height: 150px;
+		padding-bottom: 32px;
+		& .swiper-wrapper {
+			& .swiper-slide {
+				& img {
+					width: 100px;
+				}
+			}
+		}
+	}
+}
+/*******************************/

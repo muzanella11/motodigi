@@ -15,4 +15,15 @@
 /******************************/
 
 /** This Place For Content **/
+.#{$theme-prefix} {
+	&.l-main-content {
+		//
+	}
+
+	&.l-content {
+		position: relative;
+		width: 100%;
+		padding: 0 64px;
+	}
+}
 /*******************************/

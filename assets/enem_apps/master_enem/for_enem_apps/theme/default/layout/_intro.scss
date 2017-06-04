@@ -14,7 +14,19 @@
 /*****     ********************/
 /******************************/
 
-/** This Place For State Style **/
-@import "state/_normal";
-@import "state/_responsive";
+/** This Place For Intro **/
+.#{$theme-prefix} {
+	&.l-intro {
+		padding: 15vh 0;
+		& .l-intro__left {
+			//
+		}
+
+		& .l-intro__right {
+			& .title {
+				margin: 32px 0;
+			}
+		}
+	}
+}
 /*******************************/

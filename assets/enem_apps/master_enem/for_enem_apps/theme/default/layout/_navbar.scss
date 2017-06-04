@@ -1,0 +1,51 @@
+/******************************/
+/*****                    *****/
+/*****                   ******/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****              ***********/
+/*****             ************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/******************************/
+
+/** This Place For Navbar **/
+.#{$theme-prefix} {
+	&.l-navbar {
+		//background: $theme-red;
+		& .l-navbar__menu {
+			position: relative;
+			float: right;
+			list-style: none;
+			& li {
+				float: right;
+				border: solid 1px black;
+				border-left: none;
+				border-right: solid 1px black;
+				&:last-child {
+					border-left: solid 1px black;
+				}
+				& a {
+					padding: 5px 15px;
+					color: black;
+					display: block;
+					@include transition(300ms all ease-in-out);
+					&.active {
+						background: $theme-red;
+						color: white;
+					}
+					&:hover {
+						background: $theme-red;
+						color: white;
+					}
+				}
+			}
+		}
+	}
+}
+/*******************************/

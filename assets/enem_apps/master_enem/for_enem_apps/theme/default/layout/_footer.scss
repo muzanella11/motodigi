@@ -15,4 +15,74 @@
 /******************************/
 
 /** This Place For Footer **/
+.#{$theme-prefix} {
+	&.l-footer {
+		position: relative;
+		width: 100%;
+		margin-top: 48px;
+		& .l-footer__subscribe {
+			position: relative;
+			width: 100%;
+			min-height: 30px;
+			background: $theme-red;
+			padding: 8px 0;
+			& .subscribe__list {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				color: white;
+				& li {
+					float: left;
+					&:first-child {
+						padding-top: 6px;
+						padding-right: 16px;
+					}
+				}
+			}
+		}
+
+		& .l-footer__main {
+			position: relative;
+			width: 100%;
+			padding-bottom: 64px;
+			& .main-content {
+				& .main-content__brand {
+					position: relative;
+					width: 100%;
+					text-align: center;
+					padding: 64px 0;
+    				padding-bottom: 32px;
+				}
+
+				& .main-content__address {
+					position: relative;
+					width: 100%;
+					text-align: center;
+					padding-bottom: 16px;
+				}
+
+				& .main-content__contact {
+					position: relative;
+					width: 100%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					& .contact-list {
+						position: relative;
+						list-style: none;
+						margin: 0;
+						padding: 0;
+						& li {
+							float: left;
+							padding-right: 32px;
+							&:last-child {
+								padding-right: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
 /*******************************/

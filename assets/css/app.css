@@ -145,6 +145,8 @@
   position: absolute;
   top: 0;
   left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   z-index: 8020; }
 
 .fancybox-skin {
@@ -190,7 +192,7 @@
   max-height: 100%; }
 
 #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
-  background-image: url("fancybox_sprite.png"); }
+  background-image: url(fancybox_sprite.png); }
 
 #fancybox-loading {
   position: fixed;
@@ -206,7 +208,7 @@
 #fancybox-loading div {
   width: 44px;
   height: 44px;
-  background: url("fancybox_loading.gif") center center no-repeat; }
+  background: url(fancybox_loading.gif) center center no-repeat; }
 
 .fancybox-close {
   position: absolute;
@@ -224,7 +226,7 @@
   height: 100%;
   cursor: pointer;
   text-decoration: none;
-  background: transparent url("blank.gif");
+  background: transparent url(blank.gif);
   /* helps IE */
   -webkit-tap-highlight-color: transparent;
   z-index: 8040; }
@@ -260,14 +262,13 @@
   position: absolute;
   top: -99999px;
   left: -99999px;
-  visibility: hidden;
   max-width: 99999px;
   max-height: 99999px;
   overflow: visible !important; }
 
 /* Overlay helper */
 .fancybox-lock {
-  overflow: hidden !important;
+  overflow: visible !important;
   width: auto; }
 
 .fancybox-lock body {
@@ -283,7 +284,7 @@
   overflow: hidden;
   display: none;
   z-index: 8010;
-  background: url("fancybox_overlay.png"); }
+  background: url(fancybox_overlay.png); }
 
 .fancybox-overlay-fixed {
   position: fixed;
@@ -349,29 +350,29 @@
 /*Retina graphics!*/
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
-    background-image: url("fancybox_sprite@2x.png");
+    background-image: url(fancybox_sprite@2x.png);
     background-size: 44px 152px;
     /*The size of the normal image, half the size of the hi-res image*/ }
   #fancybox-loading div {
-    background-image: url("fancybox_loading@2x.gif");
+    background-image: url(fancybox_loading@2x.gif);
     background-size: 24px 24px;
     /*The size of the normal image, half the size of the hi-res image*/ } }
 
 /****************************/
 /** Swiper Slider **/
 /**
- * Swiper 3.4.0
+ * Swiper 3.4.2
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * 
  * http://www.idangero.us/swiper/
  * 
- * Copyright 2016, Vladimir Kharlampidi
+ * Copyright 2017, Vladimir Kharlampidi
  * The iDangero.us
  * http://www.idangero.us/
  * 
  * Licensed under MIT
  * 
- * Released on: October 16, 2016
+ * Released on: March 10, 2017
  */
 .swiper-container {
   margin-left: auto;
@@ -9948,6 +9949,10 @@ body.vex-open {
 /******************************/
 /** This Place For Variable Theme **/
 /*******************************/
+/** COLORS **/
+/*******************************/
+/** FONT **/
+/*******************************/
 /*******************************/
 /** This Place For Base Style **/
 /******************************/
@@ -10012,8 +10017,8 @@ html, body {
   height: auto; }
 
 body {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  font-family: monospace;
+  font-size: 16px;
   font-style: normal;
   line-height: 1.428571429;
   color: #333;
@@ -10022,7 +10027,7 @@ body {
   font-weight: 400; }
 
 p {
-  font-size: 14px; }
+  font-size: 16px; }
 
 a {
   text-decoration: none;
@@ -10036,11 +10041,32 @@ a {
   a:active {
     outline: 0; }
   a:focus {
+    text-decoration: none;
     outline: 0; }
 
 button {
   outline: 0; }
 
+/******************************/
+/*****                    *****/
+/*****                   ******/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****              ***********/
+/*****             ************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/******************************/
+/** This Place For Typography **/
+.motodigi.text.text--center {
+  text-align: center; }
+
+/*******************************/
 /******************************/
 /*****                    *****/
 /*****                   ******/
@@ -10076,7 +10102,7 @@ button {
 /*****     ********************/
 /*****     ********************/
 /******************************/
-/** This Place For Layout Style **/
+/** This Place For Layout **/
 /******************************/
 /*****                    *****/
 /*****                   ******/
@@ -10093,6 +10119,53 @@ button {
 /*****     ********************/
 /******************************/
 /** This Place For Header **/
+.motodigi.l-header {
+  position: relative;
+  width: 100%;
+  margin: 48px 0; }
+
+/*******************************/
+/******************************/
+/*****                    *****/
+/*****                   ******/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****              ***********/
+/*****             ************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/******************************/
+/** This Place For Navbar **/
+.motodigi.l-navbar .l-navbar__menu {
+  position: relative;
+  float: right;
+  list-style: none; }
+  .motodigi.l-navbar .l-navbar__menu li {
+    float: right;
+    border: solid 1px black;
+    border-left: none;
+    border-right: solid 1px black; }
+    .motodigi.l-navbar .l-navbar__menu li:last-child {
+      border-left: solid 1px black; }
+    .motodigi.l-navbar .l-navbar__menu li a {
+      padding: 5px 15px;
+      color: black;
+      display: block;
+      -webkit-transition: 300ms all ease-in-out;
+      -o-transition: 300ms all ease-in-out;
+      transition: 300ms all ease-in-out; }
+      .motodigi.l-navbar .l-navbar__menu li a.active {
+        background: #c82d28;
+        color: white; }
+      .motodigi.l-navbar .l-navbar__menu li a:hover {
+        background: #c82d28;
+        color: white; }
+
 /*******************************/
 /******************************/
 /*****                    *****/
@@ -10110,6 +10183,108 @@ button {
 /*****     ********************/
 /******************************/
 /** This Place For Content **/
+.motodigi.l-content {
+  position: relative;
+  width: 100%;
+  padding: 0 64px; }
+
+/*******************************/
+/******************************/
+/*****                    *****/
+/*****                   ******/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****              ***********/
+/*****             ************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/******************************/
+/** This Place For Panel Section **/
+.motodigi.l-panel-section .l-panel-section__title {
+  position: relative;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 48px;
+  display: block;
+  text-transform: uppercase; }
+
+.motodigi.l-panel-section .l-panel-section__content {
+  position: relative;
+  width: 100%; }
+
+/*******************************/
+/******************************/
+/*****                    *****/
+/*****                   ******/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****              ***********/
+/*****             ************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/******************************/
+/** This Place For Intro **/
+.motodigi.l-intro {
+  padding: 15vh 0; }
+  .motodigi.l-intro .l-intro__right .title {
+    margin: 32px 0; }
+
+/*******************************/
+/******************************/
+/*****                    *****/
+/*****                   ******/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****              ***********/
+/*****             ************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/******************************/
+/** This Place For Separator **/
+.motodigi.l-separator {
+  position: relative;
+  width: 100%;
+  height: 15px;
+  margin: 48px 0;
+  background: #952f2b; }
+  .motodigi.l-separator:after {
+    position: absolute;
+    width: 150px;
+    height: 15px;
+    background: white;
+    content: '';
+    margin: auto;
+    left: 0;
+    right: 0; }
+  .motodigi.l-separator:before {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    content: '';
+    margin: auto;
+    left: 0;
+    right: 0;
+    border: solid 2px #c82d28;
+    z-index: 1;
+    border-radius: 50%;
+    top: -16px;
+    background: transparent; }
+
 /*******************************/
 /******************************/
 /*****                    *****/
@@ -10127,6 +10302,58 @@ button {
 /*****     ********************/
 /******************************/
 /** This Place For Footer **/
+.motodigi.l-footer {
+  position: relative;
+  width: 100%;
+  margin-top: 48px; }
+  .motodigi.l-footer .l-footer__subscribe {
+    position: relative;
+    width: 100%;
+    min-height: 30px;
+    background: #c82d28;
+    padding: 8px 0; }
+    .motodigi.l-footer .l-footer__subscribe .subscribe__list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      color: white; }
+      .motodigi.l-footer .l-footer__subscribe .subscribe__list li {
+        float: left; }
+        .motodigi.l-footer .l-footer__subscribe .subscribe__list li:first-child {
+          padding-top: 6px;
+          padding-right: 16px; }
+  .motodigi.l-footer .l-footer__main {
+    position: relative;
+    width: 100%;
+    padding-bottom: 64px; }
+    .motodigi.l-footer .l-footer__main .main-content .main-content__brand {
+      position: relative;
+      width: 100%;
+      text-align: center;
+      padding: 64px 0;
+      padding-bottom: 32px; }
+    .motodigi.l-footer .l-footer__main .main-content .main-content__address {
+      position: relative;
+      width: 100%;
+      text-align: center;
+      padding-bottom: 16px; }
+    .motodigi.l-footer .l-footer__main .main-content .main-content__contact {
+      position: relative;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .motodigi.l-footer .l-footer__main .main-content .main-content__contact .contact-list {
+        position: relative;
+        list-style: none;
+        margin: 0;
+        padding: 0; }
+        .motodigi.l-footer .l-footer__main .main-content .main-content__contact .contact-list li {
+          float: left;
+          padding-right: 32px; }
+          .motodigi.l-footer .l-footer__main .main-content .main-content__contact .contact-list li:last-child {
+            padding-right: 0; }
+
 /*******************************/
 /*******************************/
 /*******************************/
@@ -10181,6 +10408,92 @@ button {
 /******************************/
 /** This Place For Block Content **/
 /*******************************/
+/******************************/
+/*****                    *****/
+/*****                   ******/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****              ***********/
+/*****             ************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/******************************/
+/** This Place For Button **/
+.motodigi.btn.btn--blue {
+  background: #274b85; }
+  .motodigi.btn.btn--blue:hover {
+    color: white; }
+
+/*******************************/
+/*******************************/
+/*******************************/
+/** This Place For Core Style **/
+/******************************/
+/*****                    *****/
+/*****                   ******/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****              ***********/
+/*****             ************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/******************************/
+/** This Place For Core **/
+.motodigi.why-us {
+  position: relative;
+  width: 100%;
+  display: flex; }
+  .motodigi.why-us .why-us__block {
+    flex: 1;
+    text-align: center; }
+    .motodigi.why-us .why-us__block img {
+      width: 100px;
+      height: 100px; }
+    .motodigi.why-us .why-us__block .title {
+      position: relative;
+      width: 100%; }
+
+.motodigi.content-service {
+  padding: 0 10vw; }
+  .motodigi.content-service > div {
+    text-align: center; }
+  .motodigi.content-service img {
+    width: 100px;
+    height: 100px; }
+  .motodigi.content-service .title {
+    position: relative;
+    width: 100%;
+    padding: 16px 0; }
+
+.motodigi.steps > div {
+  text-align: left; }
+
+.motodigi.steps img {
+  width: 100px;
+  height: 100px; }
+
+.motodigi.steps .title {
+  position: relative;
+  width: 100%;
+  padding: 16px 0;
+  font-weight: bold; }
+
+.motodigi.brand-slider {
+  min-height: 150px;
+  padding-bottom: 32px; }
+  .motodigi.brand-slider .swiper-wrapper .swiper-slide img {
+    width: 100px; }
+
 /*******************************/
 /*******************************/
 /** This Place For State Style **/
@@ -10200,6 +10513,29 @@ button {
 /*****     ********************/
 /******************************/
 /** This Place For State Style **/
+/******************************/
+/*****                    *****/
+/*****                   ******/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****              ***********/
+/*****             ************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/*****     ********************/
+/******************************/
+/** This Place For Normal **/
+.motodigi.no-margin {
+  margin: 0; }
+
+.motodigi.no-padding {
+  padding: 0; }
+
+/*******************************/
 /******************************/
 /*****                    *****/
 /*****                   ******/

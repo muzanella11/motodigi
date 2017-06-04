@@ -14,7 +14,15 @@
 /*****     ********************/
 /******************************/
 
-/** This Place For State Style **/
-@import "state/_normal";
-@import "state/_responsive";
+/** This Place For Button **/
+.#{$theme-prefix} {
+	&.btn {
+		&.btn--blue {
+			background: $theme-blue;
+			&:hover {
+				color: white;
+			}
+		}
+	}
+}
 /*******************************/
